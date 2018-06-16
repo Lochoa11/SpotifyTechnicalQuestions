@@ -3,6 +3,12 @@ class question1{
         String t = "odg";
         String s = "good";
 
+        
+
+        System.out.println(sortByString(s, t));
+    }
+
+    public static String sortByString(String s, String t){
         int patternLocation = 0;
         String temp = "";
         while(patternLocation < t.length()){
@@ -15,6 +21,6 @@ class question1{
             }
             patternLocation++;
         }
-        System.out.println(temp);
+        return temp;
     }
 }
